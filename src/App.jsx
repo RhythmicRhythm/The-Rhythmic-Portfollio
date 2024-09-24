@@ -4,6 +4,7 @@ import { Navigate, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import HomePage from "./pages/HomePage";
 import Token from "./pages/Token";
+import ProjectInfo from "./pages/ProjectInfo";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <div className=" mx-auto">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/token" element={<Token />} />
+          <Route path="/info" element={<ProjectInfo />} />
         </Routes>
         <Toaster />
       </div>
