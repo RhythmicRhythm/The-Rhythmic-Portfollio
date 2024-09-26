@@ -1,4 +1,4 @@
-import ireoluwa from "../assets/ireoluwa.jpg";
+import mugen from "../assets/Mugen.webp";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGlobe } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
@@ -10,7 +10,7 @@ const Hero = () => {
       <section className="relative pb-20 px-6 mt-44">
         <div className="mx-auto flex flex-col sm:flex-row-reverse gap-4 justify-center items-center max-w-3xl">
           <div className="w-full mx-auto sm:w-1/2 flex justify-center items-center">
-            <img src={ireoluwa} alt="" className="rounded-full w-60 border" />
+            <img src={mugen} alt="" className="rounded-full w-60 border" />
           </div>
           <div className="flex flex-col justify-center items-center text-center w-full sm:w-1/2">
             <h2 className="mt-8 text-xl sm:text-2xl font-bold uppercase">
