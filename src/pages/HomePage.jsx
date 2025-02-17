@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Loader from "../components/Loader";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -14,13 +15,14 @@ const HomePage = () => {
     }, 2000);
   }, []);
 
-  if (isLoading) {
-    return <Loader />;
-  }
+  // if (isLoading) {
+  //   return <Loader />;
+  // }
   return (
     <div>
       <Hero />
       <Projects />
+      <Footer />
     </div>
   );
 };

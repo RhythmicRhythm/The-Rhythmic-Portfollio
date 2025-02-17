@@ -3,7 +3,6 @@ import { Navigate, Routes, Route } from "react-router-dom";
 
 import { Toaster } from "react-hot-toast";
 import HomePage from "./pages/HomePage";
-import Token from "./pages/Token";
 import ProjectInfo from "./pages/ProjectInfo";
 
 function App() {
