@@ -1,16 +1,10 @@
 import { useState } from "react";
-import { VscSettings } from "react-icons/vsc";
 import ProjectList from "./ProjectList";
-import Skills from "./Skills";
-import Contact from "./Contact";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("fliers");
   return (
     <div>
-      <div className=" flex justify-center mb- py-24">
-        <h1 className="text-2xl sm:text-5xl text-black">My Projects</h1>
-      </div>
       {/* <div className="p-4 rounded-md mb-6  flex justify-center">
         <div className="flex justify-center bg-gray-800 rounded-md mb-4 py_font">
           <button
@@ -52,8 +46,6 @@ const Projects = () => {
       {activeTab == "menus" && <MenusList />}
       {activeTab == "cards" && <CardsList />} */}
       <ProjectList />
-      <Skills />
-      <Contact />
     </div>
   );
 };
