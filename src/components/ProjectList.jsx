@@ -7,6 +7,7 @@ import lyngual from "../assets/works/lyngual.png";
 import etherpump from "../assets/works/etherpump.png";
 import speechapp from "../assets/works/speechapp.png";
 import dasahomes from "../assets/works/dasahomes.png";
+import cookbox from "../assets/works/cookbox.png";
 
 const projects = [
   {
@@ -23,7 +24,7 @@ const projects = [
     link: "https://andicoxstudio.com",
     description:
       "A Nigerian gaming studio dedicated to crafting immersive and innovative gaming experiences.",
-    tech: ["React", "Three.js", "CSS"]
+    tech: ["React", "Three.js", "Tailwind CSS"]
   },
   {
     name: "Lyngual Labs",
@@ -32,6 +33,14 @@ const projects = [
     description:
       "An AI-focused research lab pioneering advancements in artificial intelligence and machine learning.",
     tech: ["React", "Node.js", "AI Integration"]
+  },
+  {
+    name: "Cookbox",
+    image: cookbox,
+    link: "https://cookboxltd.com",
+    description:
+      "A  Foodstore that specialised in the Best of Nigerian Cuisine",
+    tech: ["React", "Firebase", "Redux"]
   },
   {
     name: "Ether Pump",
