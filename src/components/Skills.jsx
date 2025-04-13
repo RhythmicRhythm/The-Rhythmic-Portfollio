@@ -10,6 +10,7 @@ import {
   FaServer,
   FaDatabase,
 } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
 import {
   SiRedux,
   SiTailwindcss,
@@ -32,7 +33,10 @@ const skillsData = [
       { name: "React", icon: <FaReact className="text-blue-400" /> },
       { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
       { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
-      { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
+      {
+        name: "JavaScript",
+        icon: <SiJavascript className="text-yellow-400" />,
+      },
       { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
       { name: "Tailwind", icon: <SiTailwindcss className="text-teal-400" /> },
     ],
@@ -45,7 +49,7 @@ const skillsData = [
       { name: "Express", icon: <SiExpress className="text-gray-300" /> },
       { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-400" /> },
-      
+      { name: "Golang", icon: <FaGolang className="text-blue-500" /> },
     ],
   },
   {
@@ -57,7 +61,10 @@ const skillsData = [
       { name: "AWS", icon: <FaAws className="text-orange-400" /> },
       { name: "GitHub", icon: <FaGithub className="text-gray-300" /> },
       { name: "Azure", icon: <SiMicrosoftazure className="text-blue-500" /> },
-      { name: "Azure DevOps", icon: <SiAzuredevops className="text-blue-700" /> },
+      {
+        name: "Azure DevOps",
+        icon: <SiAzuredevops className="text-blue-700" />,
+      },
     ],
   },
 ];
@@ -74,19 +81,25 @@ const Skills = () => {
   };
 
   return (
-    <div 
-      className="min-h-screen py-16 px-4 md:px-8" 
+    <div
+      className="min-h-screen py-16 px-4 md:px-8"
       style={{ backgroundColor: vscodeStyles.background }}
     >
       <div className="max-w-6xl mx-auto">
         {/* VS Code-like title bar */}
-        <div className="flex items-center mb-8 border-b" style={{ borderColor: vscodeStyles.border }}>
+        <div
+          className="flex items-center mb-8 border-b"
+          style={{ borderColor: vscodeStyles.border }}
+        >
           <div className="flex space-x-2 px-4 py-3">
             <div className="w-3 h-3 rounded-full bg-red-500"></div>
             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
             <div className="w-3 h-3 rounded-full bg-green-500"></div>
           </div>
-          <div className="ml-4 text-sm" style={{ color: vscodeStyles.inactiveText }}>
+          <div
+            className="ml-4 text-sm"
+            style={{ color: vscodeStyles.inactiveText }}
+          >
             skills.tsx
           </div>
         </div>
@@ -94,19 +107,25 @@ const Skills = () => {
         {/* Main content */}
         <div className="flex flex-col md:flex-row gap-8">
           {/* VS Code-like sidebar */}
-          <div 
-            className="w-full md:w-64 p-4 rounded-lg" 
-            style={{ 
+          <div
+            className="w-full md:w-64 p-4 rounded-lg"
+            style={{
               backgroundColor: vscodeStyles.sidebar,
-              border: `1px solid ${vscodeStyles.border}`
+              border: `1px solid ${vscodeStyles.border}`,
             }}
           >
-            <h3 className="text-lg font-medium mb-4" style={{ color: vscodeStyles.activeText }}>
+            <h3
+              className="text-lg font-medium mb-4"
+              style={{ color: vscodeStyles.activeText }}
+            >
               EXPLORER
             </h3>
             <div className="space-y-2">
               {skillsData.map((section) => (
-                <div key={section.category} className="flex items-center text-sm">
+                <div
+                  key={section.category}
+                  className="flex items-center text-sm"
+                >
                   <span className="mr-2">📁</span>
                   <span style={{ color: vscodeStyles.activeText }}>
                     {section.category}
@@ -119,10 +138,16 @@ const Skills = () => {
           {/* Skills content area */}
           <div className="flex-1">
             <div className="mb-8">
-              <h2 className="text-3xl font-bold mb-2" style={{ color: vscodeStyles.activeText }}>
+              <h2
+                className="text-3xl font-bold mb-2"
+                style={{ color: vscodeStyles.activeText }}
+              >
                 // My Tech Stack
               </h2>
-              <p className="text-sm" style={{ color: vscodeStyles.inactiveText }}>
+              <p
+                className="text-sm"
+                style={{ color: vscodeStyles.inactiveText }}
+              >
                 Technologies I've worked with professionally and personally
               </p>
             </div>
@@ -133,23 +158,23 @@ const Skills = () => {
                 <div key={section.category}>
                   <div className="flex items-center mb-6">
                     {section.icon}
-                    <h3 
-                      className="ml-2 text-xl font-semibold" 
+                    <h3
+                      className="ml-2 text-xl font-semibold"
                       style={{ color: vscodeStyles.activeText }}
                     >
                       {section.category}
                     </h3>
                   </div>
-                  
+
                   <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                     {section.skills.map((skill) => (
                       <motion.div
                         key={skill.name}
                         whileHover={{ y: -5 }}
                         className="p-4 rounded-lg flex flex-col items-center"
-                        style={{ 
+                        style={{
                           backgroundColor: vscodeStyles.sidebar,
-                          border: `1px solid ${vscodeStyles.border}`
+                          border: `1px solid ${vscodeStyles.border}`,
                         }}
                       >
                         <div className="text-3xl mb-2">{skill.icon}</div>
@@ -164,12 +189,12 @@ const Skills = () => {
             </div>
 
             {/* Status bar */}
-            <div 
+            <div
               className="mt-12 p-2 text-xs flex justify-between items-center rounded"
-              style={{ 
+              style={{
                 backgroundColor: vscodeStyles.sidebar,
                 border: `1px solid ${vscodeStyles.border}`,
-                color: vscodeStyles.inactiveText
+                color: vscodeStyles.inactiveText,
               }}
             >
               <div>main*</div>

@@ -44,7 +44,7 @@ const projects = [
   {
     name: "Speech App",
     image: speechapp,
-    link: "https://speechapp.lynguallabs.org",
+    link: "https://speechappstaging.lynguallabs.org",
     description:
       "A speech curation project by Lyngual Labs that leverages AI for real-time speech-to-text processing.",
     tech: ["React", "WebSpeech API", "AI"]
