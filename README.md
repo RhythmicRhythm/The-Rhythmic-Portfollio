@@ -17,9 +17,8 @@
 
 ## 📸 Preview
 
-> *(Optional: Add a live link and screenshots/gifs here)*  
 [Live Demo](https://therhythmicrhythm.vercel.app/)  
-![Screenshot](./public/cover.png)
+![Screenshot](./public/rhythm.png)
 
 ---
 
