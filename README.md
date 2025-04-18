@@ -1,6 +1,6 @@
 # 🎵 The Rhythmic Portfolio
 
-**The Rhythmic Portfolio** is a vibrant, modern, and responsive portfolio platform built with React, Vite, Tailwind CSS, and Firebase. Designed to showcase user-generated content like images and posts in a visually engaging way, it allows users to create a dynamic portfolio or personal page with avatar selections and post previews.
+**The Rhythmic Portfolio** is my vibrant, modern, and responsive portfolio platform built with React, Vite, Tailwind CSS, and Firebase. Designed to showcase user-generated content like images and posts in a visually engaging way, it allows users to create a dynamic portfolio or personal page with avatar selections and post previews.
 
 ---
 
